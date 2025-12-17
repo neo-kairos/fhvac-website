@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forest Hills Volunteer Ambulance Corps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forest Hills Volunteer Ambulance Corps – Serving the Queens, New York community. New website coming soon.">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0b3d1f; /* dark green */
+            color: #ffffff;
+        }
+
+        .page-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 640px;
+            padding: 24px;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+
+        .logo {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #7cfc9a; /* light green */
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 24px;
+            color: #e6fff0;
+        }
+
+        .coming-soon {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+
+        .description {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #f2fff7;
+            margin-bottom: 28px;
+        }
+
+        .contact {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #9dffb8;
+            text-decoration: underline;
+        }
+
+        .contact a:focus,
+        .contact a:hover {
+            outline: 2px solid #9dffb8;
+            outline-offset: 3px;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 0.9em;
+            color: #c8f5d8;
+        }
+
+        /* Subtle fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Respect reduced motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            .content {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main class="page-container" role="main">
+    <section class="content" aria-labelledby="site-title">
+        <!-- Company Logo -->
+        <img 
+            src="FHVAC logo.png" 
+            alt="Forest Hills Volunteer Ambulance Corps logo" 
+            class="logo"
+        >
+
+        <h1 id="site-title">Forest Hills Volunteer Ambulance Corps</h1>
+
+        <p class="subtitle">
+            Proudly Serving the Queens, New York City Community
+        </p>
+
+        <p class="coming-soon" aria-live="polite">
+            New Website Coming Soon
+        </p>
+
+        <p class="description">
+            We are a non-profit, volunteer-based ambulance service dedicated to providing
+            high-quality emergency medical care to our local community in Queens, New York.
+            Our new website is currently under development and will be launching soon.
+        </p>
+
+        <address class="contact">
+            <strong>Contact:</strong><br>
+            <a href="mailto:info@fhvac.org">info@fhvac.org</a><br><br>
+            <strong>Facebook:</strong><br>
+            <a href="https://www.facebook.com/foresthillsvac" target="_blank" rel="noopener noreferrer">
+                facebook.com/foresthillsvac
+            </a>
+        </address>
+
+        <footer class="footer">
+            © 1971 – Forest Hills Volunteer Ambulance Corps<br>
+            A non-profit organization serving our community
+        </footer>
+    </section>
+</main>
+
+</body>
+</html>
