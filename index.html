@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>Forest Hills Volunteer Ambulance Corps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forest Hills Volunteer Ambulance Corps – A non-profit volunteer ambulance service serving the Queens, New York communities. Website coming soon.">
+    <meta name="description" content="Forest Hills Volunteer Ambulance Corps – A non-profit volunteer ambulance service serving local communities in Queens, New York City. Website coming soon.">
 
     <style>
         html, body {
             height: 100%;
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #1f6f3f; /* lighter green for GitHub Pages */
-            color: #ffffff;
+            background: linear-gradient(180deg, #eefaf4 0%, #d9f0e5 100%);
+            color: #123524; /* dark text for accessibility */
         }
 
         .page-container {
@@ -39,14 +39,13 @@
         h1 {
             font-size: 2.2em;
             margin-bottom: 10px;
-            color: #7cfc9a; /* light green */
+            color: #145c38; /* dark green heading */
             letter-spacing: 1px;
         }
 
         .subtitle {
             font-size: 1.2em;
             margin-bottom: 24px;
-            color: #e6fff0;
         }
 
         .coming-soon {
@@ -58,8 +57,7 @@
         .description {
             font-size: 1em;
             line-height: 1.6;
-            color: #f2fff7;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
         .contact {
@@ -68,51 +66,50 @@
         }
 
         .contact a {
-            color: #9dffb8;
+            color: #1f7a4c;
+            font-weight: bold;
             text-decoration: underline;
         }
 
         .contact a:focus,
         .contact a:hover {
-            outline: 2px solid #9dffb8;
+            outline: 2px solid #1f7a4c;
             outline-offset: 3px;
         }
 
         .footer {
             margin-top: 32px;
             font-size: 0.9em;
-            color: #c8f5d8;
+            color: #2f6b4a;
         }
 
-        /* Subtle fade-in animation */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Respect reduced motion preferences */
         @media (prefers-reduced-motion: reduce) {
-            .content {
-                animation: none;
-            }
+            .content { animation: none; }
         }
-            /* SEO-friendly hidden heading for screen readers */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
+
+        /* Automatic dark mode */
+        @media (prefers-color-scheme: dark) {
+            html, body {
+                background: linear-gradient(180deg, #0f2f1f 0%, #0b2418 100%);
+                color: #e6fff3;
+            }
+
+            h1 {
+                color: #7cfc9a;
+            }
+
+            .contact a {
+                color: #9dffb8;
+            }
+
+            .footer {
+                color: #c8f5d8;
+            }
         }
     </style>
 
@@ -144,17 +141,12 @@
 
 <main class="page-container" role="main">
     <section class="content" aria-labelledby="site-title">
-        <!-- Company Logo -->
-        <img 
-            src="FHVAC logo.png" 
-            alt="Forest Hills Volunteer Ambulance Corps logo" 
-            class="logo"
-        >
+        <img src="FHVAC logo.png" alt="Forest Hills Volunteer Ambulance Corps logo" class="logo">
 
         <h1 id="site-title">Forest Hills Volunteer Ambulance Corps</h1>
 
         <p class="subtitle">
-            Proudly Serving the Queens, New York City Community
+            Proudly Serving Local Communities in Queens, New York City
         </p>
 
         <p class="coming-soon" aria-live="polite">
@@ -163,12 +155,12 @@
 
         <p class="description">
             We are a non-profit, volunteer-based ambulance service dedicated to providing
-            high-quality emergency medical care to our local communities in Queens, New York.
+            high-quality emergency medical care to local communities throughout Queens, New York.
             Our new website is currently under development and will be launching soon.
         </p>
 
         <p class="description">
-            <strong>Volunteer With Us:</strong> We are always looking for dedicated communities
+            <strong>Volunteer With Us:</strong> We are always looking for dedicated community
             members who want to make a real difference. Whether you are an experienced EMT
             or interested in learning and serving, volunteering with FHVAC is a meaningful
             way to support your neighbors and gain valuable emergency medical experience.
