@@ -55,12 +55,6 @@
             margin-bottom: 24px;
         }
 
-        .coming-soon {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 22px;
-        }
-
         .description {
             font-size: 1em;
             line-height: 1.6;
@@ -81,6 +75,76 @@
         .contact a:focus,
         .contact a:hover {
             outline: 2px solid #0e4a2f;
+            outline-offset: 3px;
+        }
+
+        .event-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 24px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .event-banner .event-label {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #e2b44d;
+            margin-bottom: 8px;
+        }
+
+        .event-banner .event-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 0 6px 0;
+            color: #fff;
+            line-height: 1.25;
+        }
+
+        .event-banner .event-honor {
+            font-size: 0.9em;
+            color: #c8d6e5;
+            margin-bottom: 14px;
+            font-style: italic;
+        }
+
+        .event-banner .event-details {
+            font-size: 0.95em;
+            line-height: 1.7;
+            color: #dfe6ed;
+            margin-bottom: 16px;
+        }
+
+        .event-banner .event-details strong {
+            color: #fff;
+        }
+
+        .event-banner .event-coin {
+            font-size: 0.85em;
+            color: #e2b44d;
+            margin-bottom: 18px;
+        }
+
+        .event-banner .event-btn {
+            display: inline-block;
+            background: #e2b44d;
+            color: #1a1a2e;
+            font-weight: bold;
+            font-size: 1.05em;
+            padding: 12px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: background 0.2s;
+        }
+
+        .event-banner .event-btn:hover,
+        .event-banner .event-btn:focus {
+            background: #d4a03c;
+            outline: 2px solid #e2b44d;
             outline-offset: 3px;
         }
 
@@ -109,10 +173,9 @@
                 font-size: 1.05em;
             }
 
-            .coming-soon {
+            .event-banner .event-title {
                 font-size: 1.25em;
             }
-        }
         }
 
         /* Automatic dark mode */
@@ -127,24 +190,11 @@
             }
 
             .contact a {
-                color: #0e4a2f;
-            }
-
-            .footer {
-                color: #0e4a2f;
-            }
-        }
-
-            h1 {
                 color: #7cfc9a;
             }
 
-            .contact a {
-                color: #0e4a2f;
-            }
-
             .footer {
-                color: #0e4a2f;
+                color: #a0d4b8;
             }
         }
     </style>
@@ -183,9 +233,19 @@
             Proudly Serving Local Communities in Queens, New York City
         </p>
 
-        <p class="coming-soon" aria-live="polite">
-            New Website Coming Soon
-        </p>
+
+        <div class="event-banner">
+            <p class="event-label">Upcoming Event</p>
+            <h2 class="event-title">25th Anniversary 9/11 Memorial<br>&ldquo;Run for Richie&rdquo; Motorcycle Parade</h2>
+            <p class="event-honor">Honoring Richard Allen Pearlman &mdash; the youngest first responder lost on September 11, 2001</p>
+            <p class="event-details">
+                <strong>Saturday, September 19, 2026</strong><br>
+                Registration at 8:00 AM &nbsp;|&nbsp; Kickstands Up at 11:30 AM<br>
+                Aqueduct Racetrack Parking Lot, Queens, NY
+            </p>
+            <p class="event-coin">First 411 registered riders receive a limited-edition commemorative coin<br>(411 for the total first responders lost at the WTC)</p>
+            <a href="https://www.eventbrite.com/e/25th-anniversary-911-memorial-run-for-richie-motorcycle-parade-tickets-1977330684305" class="event-btn" target="_blank" rel="noopener noreferrer">Register Now on Eventbrite</a>
+        </div>
 
         <p class="description">
             We are a non-profit, volunteer-based ambulance service dedicated to providing
